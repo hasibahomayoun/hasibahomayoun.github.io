@@ -236,10 +236,11 @@ body {
 /* === Scroll indicator === */
 .scroll-down {
   position: absolute;
-  bottom: 2rem;
+  bottom: 6rem;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
+  z-index: 3;
 }
 .arrow {
   display: inline-block;
@@ -813,7 +814,7 @@ html {
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 8rem; /* extra padding for navbar overlap */
+    padding-top: 8rem; 
   }
 
   .hero-intro {
@@ -837,6 +838,9 @@ html {
   .buttons {
     flex-direction: column;
     gap: 0.75rem;
+  }
+  .scroll-down {
+    bottom: 4rem; /* moves slightly lower for smaller screens */
   }
 }
 
