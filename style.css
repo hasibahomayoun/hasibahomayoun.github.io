@@ -145,7 +145,7 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 6rem 2rem 0;
   color: var(--text-light);
 }
 
@@ -828,5 +828,6 @@ html {
 .project-links i {
   font-size: 1.1rem;
 }
+
 
 
