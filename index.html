@@ -1,0 +1,510 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hasiba Homayoun | Software Developer Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Devicon icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-brand">{HH}</div>
+  <button class="menu-btn" id="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Overlay Menu -->
+<div id="navOverlay" class="overlay">
+  <ul class="overlay-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#featured-projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#connect">Connect</a></li>
+  </ul>
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const overlay = document.getElementById("navOverlay");
+
+  menuBtn.addEventListener("click", () => {
+    overlay.classList.toggle("show");
+    menuBtn.classList.toggle("open");
+  });
+
+  document.querySelectorAll(".overlay-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      overlay.classList.remove("show");
+      menuBtn.classList.remove("open");
+    });
+  });
+</script>
+
+<!-- Hero Section -->
+<section id="home" class="hero text-center">
+  <div id="vanta-flame"></div>
+
+  <div class="container hero-content">
+    <img src="images/hasiba1.png" alt="Portrait of Hasiba Homayoun" class="hero-photo" />
+    <h1 class="hero-intro">Hi, I’m <span class="highlight">Hasiba Homayoun</span></h1>
+    <h2 class="hero-tagline">I’m passionate about <span class="accent">building meaningful digital experiences</span>.</h2>
+    <p class="hero-description">
+      I believe the best technology feels <strong>human</strong> — blending logic with empathy,
+      innovation with intention. My goal is to create software that not only functions beautifully
+      but also makes people feel seen, supported, and understood.
+    </p>
+    <div class="buttons mt-5">
+      <a href="resume.pdf" class="btn-primary">Download Resume</a>
+      <a href="#connect" class="btn-outline">Connect with Me</a>
+    </div>
+  </div>
+
+  <div class="scroll-down">
+    <span class="arrow"></span>
+    <p>Scroll to explore</p>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <h3 class="subheading">My Journey</h3>
+      <p>
+        Hi, I’m a Software Development student based in <strong>Hamilton, Ontario</strong>. 
+        Since 2022, I’ve been exploring how technology can serve people with empathy—especially 
+        through <strong>AI ethics, human-centered design, and emerging tools</strong> that blend creativity and logic. 
+      </p>
+      <p>
+        I’m fascinated by intuitive, mindful digital experiences—the kind that feel natural, supportive, 
+        and emotionally intelligent. When I’m not coding or studying, I’m usually reading, writing, or creating 
+        content about <strong>tech, productivity, food, and beauty</strong>—often with my two Pomeranians, 
+        <strong>Luna</strong> and <strong>River</strong>, by my side.
+      </p>
+
+      <div class="traits">
+        <div class="trait-card">
+          <div class="icon">🧩</div>
+          <h4>Problem Solver</h4>
+          <p>I approach complex challenges with creativity and structure, breaking them into real-world solutions.</p>
+        </div>
+        <div class="trait-card">
+          <div class="icon">💻</div>
+          <h4>Clean Code Advocate</h4>
+          <p>I believe code should be elegant and understandable—readable logic is empathy in action.</p>
+        </div>
+        <div class="trait-card">
+          <div class="icon">💡</div>
+          <h4>Innovative Thinker</h4>
+          <p>I love exploring AI tools and emerging technologies that spark human potential.</p>
+        </div>
+        <div class="trait-card">
+          <div class="icon">🌿</div>
+          <h4>User-Focused</h4>
+          <p>I prioritize accessible, emotionally aware interfaces that empower and include everyone.</p>
+        </div>
+      </div>
+      <div class="badges">
+        <span class="badge">📍 Based in Hamilton, Ontario</span>
+        <span class="badge">🧠 Since 2022</span>
+        <span class="badge">💻 AI & Emerging Tech Enthusiast</span>
+        <span class="badge">✍️ Creator & Writer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="education-section" id="education">
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-list">
+    <div class="edu-item">
+      <h3>Computer Systems Technology – Software Development</h3>
+      <div class="edu-meta">
+        Mohawk College – Hamilton, ON | January 2022 – Present  
+        <br><strong>Overall GPA:</strong> 93.90
+      </div>
+      <ul>
+        <li>Developed expertise in full-stack development using <strong>Python, Java, C#, PHP, JavaScript, and SQL</strong>.</li>
+        <li>Completed projects involving <strong>RESTful APIs</strong>, <strong>cloud deployment (AWS, Render)</strong>, and <strong>machine learning models</strong>.</li>
+        <li>Strengthened problem-solving skills through <strong>data structures</strong>, <strong>algorithms</strong>, and <strong>object-oriented programming (OOP)</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="edu-item" style="margin-top: 3rem;">
+      <h3>Certifications</h3>
+      <div class="certification">
+        <p><strong>Microsoft Certified:</strong> Azure Fundamentals (AZ-900)</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+      </div>
+      <div class="certification">
+        <p><strong>CompTIA Security+:</strong> In Progress</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+      </div>
+      <div class="certification">
+        <p><strong>AWS Certified Cloud Practitioner:</strong> In Progress</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="featured-projects" class="featured-section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Discord Bot -->
+      <div class="project-card">
+        <div class="project-thumb"><img src="images/discord_bot.png" alt="Discord Bot Project" /></div>
+        <div class="project-info">
+          <h3>🤖 Discord Bot App</h3>
+          <p>
+            Built a full-featured Node.js Discord bot with custom commands, event handling, and API endpoints.
+            Integrated server moderation, quote retrieval, and daily content features.
+          </p>
+          <div class="tech-stack"><span>Node.js</span> <span>Discord.js</span> <span>API</span></div>
+          <div class="project-links">
+            <a href="https://github.com/HasibaHomayoun/discord-bot" target="_blank" class="github">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Time Auction Website -->
+      <div class="project-card">
+        <div class="project-thumb"><img src="images/auction.webp" alt="Auction Website" /></div>
+        <div class="project-info">
+          <h3>💰 Real-Time Auction Website</h3>
+          <p>
+            Designed a real-time bidding platform using WebSockets and Socket.IO.
+            Live updates, active timers, and smooth UI transitions simulate a real auctioneer experience.
+          </p>
+          <div class="tech-stack"><span>Node.js</span> <span>Socket.IO</span> <span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/HasibaHomayoun/auction-app" target="_blank" class="github">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHP Login System -->
+      <div class="project-card">
+        <div class="project-thumb"><img src="images/login.png" alt="PHP Login App" /></div>
+        <div class="project-info">
+          <h3>🔐 PHP Login System</h3>
+          <p>
+            A secure, one-page PHP login application using JSON file storage, modular validation, and XSS-safe handling.
+          </p>
+          <div class="tech-stack"><span>PHP 7.2.24</span> <span>JSON</span> <span>Form Validation</span></div>
+          <div class="project-links">
+            <a href="https://github.com/HasibaHomayoun/php-login-app" target="_blank" class="github">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Dashboard -->
+      <div class="project-card">
+        <div class="project-thumb"><img src="images/sql.png" alt="SQL Dashboard" /></div>
+        <div class="project-info">
+          <h3>📊 SQL Data Dashboard</h3>
+          <p>
+            Developed an interactive reporting tool with subqueries, joins, and grouped results using SQL Server and SSMS.
+          </p>
+          <div class="tech-stack"><span>SQL Server</span> <span>Views</span> <span>Subqueries</span></div>
+          <div class="project-links">
+            <a href="https://github.com/HasibaHomayoun/sql-dashboard" target="_blank" class="github">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="button-container">
+      <a href="projects.html" class="btn-outline">Show More Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-intro">
+      A blend of languages, frameworks, and tools I’ve used to bring ideas to life —
+      from backend logic to frontend beauty.
+    </p>
+
+    <div class="skills-track">
+      <!-- Repeating skill icons -->
+      <!-- === First set === -->
+      <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+      <div class="skill-item"><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></div>
+      <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+      <div class="skill-item"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+      <div class="skill-item"><i class="devicon-c-plain colored"></i><p>C</p></div>
+      <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+      <div class="skill-item"><i class="devicon-csharp-plain colored"></i><p>C#</p></div>
+      <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>SQL</p></div>
+      <div class="skill-item"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+      <div class="skill-item"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+      <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
+      <div class="skill-item"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+      <div class="skill-item"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      <div class="skill-item"><i class="devicon-wordpress-plain colored"></i><p>WordPress</p></div>
+      <div class="skill-item"><i class="devicon-tailwindcss-plain colored"></i><p>Tailwind CSS</p></div>
+      <div class="skill-item"><i class="devicon-jquery-plain colored"></i><p>jQuery</p></div>
+      <div class="skill-item"><i class="devicon-django-plain colored"></i><p>Django</p></div>
+      <div class="skill-item"><i class="devicon-flask-original-wordmark"></i><p>Flask</p></div>
+      <div class="skill-item"><i class="devicon-react-original colored"></i><p>React Native</p></div>
+      <div class="skill-item"><i class="devicon-dotnetcore-plain colored"></i><p>.NET</p></div>
+      <div class="skill-item"><i class="devicon-express-original"></i><p>Express.js</p></div>
+      <div class="skill-item"><i class="devicon-windows8-original colored"></i><p>Windows</p></div>
+      <div class="skill-item"><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
+      <div class="skill-item"><i class="devicon-android-plain colored"></i><p>Android</p></div>
+      <div class="skill-item"><i class="devicon-github-original"></i><p>GitHub</p></div>
+
+      <!-- === Duplicate set for seamless loop === -->
+      <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+      <div class="skill-item"><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></div>
+      <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+      <div class="skill-item"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+      <div class="skill-item"><i class="devicon-c-plain colored"></i><p>C</p></div>
+      <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+      <div class="skill-item"><i class="devicon-csharp-plain colored"></i><p>C#</p></div>
+      <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>SQL</p></div>
+      <div class="skill-item"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+      <div class="skill-item"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+      <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
+      <div class="skill-item"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+      <div class="skill-item"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      <div class="skill-item"><i class="devicon-wordpress-plain colored"></i><p>WordPress</p></div>
+      <div class="skill-item"><i class="devicon-tailwindcss-plain colored"></i><p>Tailwind CSS</p></div>
+      <div class="skill-item"><i class="devicon-jquery-plain colored"></i><p>jQuery</p></div>
+      <div class="skill-item"><i class="devicon-django-plain colored"></i><p>Django</p></div>
+      <div class="skill-item"><i class="devicon-flask-original-wordmark"></i><p>Flask</p></div>
+      <div class="skill-item"><i class="devicon-react-original colored"></i><p>React Native</p></div>
+      <div class="skill-item"><i class="devicon-dotnetcore-plain colored"></i><p>.NET</p></div>
+      <div class="skill-item"><i class="devicon-express-original"></i><p>Express.js</p></div>
+      <div class="skill-item"><i class="devicon-windows8-original colored"></i><p>Windows</p></div>
+      <div class="skill-item"><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
+      <div class="skill-item"><i class="devicon-android-plain colored"></i><p>Android</p></div>
+      <div class="skill-item"><i class="devicon-github-original"></i><p>GitHub</p></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Soft Skills -->
+<section id="soft-skills" class="soft-skills-section">
+  <div class="container">
+    <h2 class="section-title">Soft Skills</h2>
+    <p class="section-intro">
+      The mindset and interpersonal skills that shape how I learn, lead, and build with others.
+    </p>
+    <div class="soft-skills-grid">
+      <div class="soft-skill-card">
+        <div class="icon">💬</div>
+        <h4>Communication</h4>
+        <p>
+          The ability to clearly explain complex technical ideas to both technical and
+          non-technical colleagues, actively listen to feedback, and understand user needs.
+        </p>
+      </div>
+
+      <div class="soft-skill-card">
+        <div class="icon">🤝</div>
+        <h4>Collaboration</h4>
+        <p>
+          Software development is a team sport. I work effectively with designers, product managers,
+          and other engineers to build cohesive, successful products.
+        </p>
+      </div>
+
+      <div class="soft-skill-card">
+        <div class="icon">🧠</div>
+        <h4>Problem-Solving</h4>
+        <p>
+          At its core, software engineering is about solving problems. I approach challenges with
+          critical thinking, analysis, and a structured debugging mindset.
+        </p>
+      </div>
+
+      <div class="soft-skill-card">
+        <div class="icon">🌿</div>
+        <h4>Adaptability</h4>
+        <p>
+          The tech landscape evolves constantly. I stay flexible, embrace change, handle shifting
+          priorities, and remain up-to-date with new advancements.
+        </p>
+      </div>
+
+      <div class="soft-skill-card">
+        <div class="icon">⏰</div>
+        <h4>Time Management</h4>
+        <p>
+          I organize workloads, prioritize tasks, and manage my time effectively to meet deadlines
+          and deliver projects efficiently.
+        </p>
+      </div>
+
+      <div class="soft-skill-card">
+        <div class="icon">🎨</div>
+        <h4>Creativity</h4>
+        <p>
+          I bring imagination to code — designing elegant, human-centered solutions that merge
+          logic and artistry to create meaningful user experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="connect" class="connect-section">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-intro">
+      Whether you’d like to discuss a collaboration, share ideas, or just say hello — I’d love to hear from you.  
+      Let’s build something meaningful together.
+    </p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/hasibahomayoun" target="_blank" class="social-icon">
+        <i class="devicon-linkedin-plain"></i><span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/HasibaHomayoun" target="_blank" class="social-icon">
+        <i class="devicon-github-original"></i><span>GitHub</span>
+      </a>
+
+      <div class="social-icon email-wrapper" onclick="copyEmail()">
+        <div class="icon-with-tooltip">
+          <i class="devicon-google-plain"></i>
+          <span class="tooltip" id="copied-msg">Copied!</span>
+        </div>
+        <span>Email</span>
+      </div>
+
+      <script>
+      function copyEmail() {
+        const email = "homayounhasiba@gmail.com";
+        const tooltip = document.getElementById("copied-msg");
+        navigator.clipboard.writeText(email).then(() => {
+          tooltip.classList.add("show");
+          setTimeout(() => tooltip.classList.remove("show"), 1500);
+        });
+      }
+      </script>
+
+      <div class="social-icon coming-soon">
+        <i class="fab fa-youtube"></i><span>Coming Soon</span>
+      </div>
+    </div>
+
+    <form action="https://formspree.io/f/mgvnjzgy" method="POST" class="contact-form">
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+      <div class="form-group"><input type="email" name="_replyto" placeholder="Your Email" required></div>
+      <div class="form-group"><textarea name="message" placeholder="Your Message" rows="5" required></textarea></div>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/three@0.121.1/build/three.min.js"></script>
+<script src="https://unpkg.com/vanta/dist/vanta.fog.min.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.VANTA && window.VANTA.FOG) {
+      VANTA.FOG({
+        el: "#vanta-flame",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0xff6a00,
+        midtoneColor: 0xd2691e,
+        lowlightColor: 0x8b4513,
+        baseColor: 0x0a0a0a,
+        blurFactor: 0.5,
+        speed: 1.4,
+        zoom: 1.1,
+        backgroundAlpha: 0.0
+      });
+    }
+  });
+</script>
+
+<script>
+window.addEventListener("load", () => {
+  const cards = document.querySelectorAll(".soft-skill-card");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, index * 150);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { root: null, threshold: 0.25 });
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-form");
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { Accept: "application/json" }
+    });
+
+    if (response.ok) {
+      form.reset();
+      const message = document.createElement("div");
+      message.textContent = "Message sent successfully! 💌";
+      message.style.color = "#FFB46A";
+      message.style.marginTop = "1rem";
+      form.appendChild(message);
+      setTimeout(() => message.remove(), 3000);
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
