@@ -787,6 +787,83 @@ html {
 .projects-page .project-card {
   margin-bottom: 3rem;     
 }
+
+/* ==============================
+   RESPONSIVE — HERO SECTION
+============================== */
+@media (max-width: 1024px) {
+  .hero-intro {
+    font-size: 3rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .hero-photo {
+    width: 300px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 8rem; /* extra padding for navbar overlap */
+  }
+
+  .hero-intro {
+    font-size: 2.3rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .hero-photo {
+    width: 240px;
+    height: 220px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-intro {
+    font-size: 1.9rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-photo {
+    width: 200px;
+    height: 190px;
+  }
+
+  .btn-primary, .btn-outline {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
 /* ==============================
    PROJECT LINKS (GITHUB BUTTONS)
 ============================== */
